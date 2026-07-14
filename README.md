@@ -118,7 +118,7 @@ ros2 topic hz /ekf_odom
 - 발행 주기(Hz): `[ros2 topic hz 결과 입력]`
 - 총 수신 메시지 수: `[trajectory_subscriber_node 로그의 마지막 인덱스 입력]`
 
-## 배운 점 (작성 가이드 — 실제로 실행해보고 본인 언어로 재작성 권장)
+## 배운 점
 
 - ROS 노드가 왜 하나의 프로세스가 아니라 여러 노드의 분산 구조로 설계되는지: publisher가 죽어도 subscriber는 독립적으로 계속 실행되고, 반대로 subscriber를 나중에 추가로 붙여도 publisher 코드를 전혀 건드릴 필요가 없다는 느슨한 결합(loose coupling)을 체감
 - 메시지 타입(`nav_msgs/Odometry`)이 정해져 있기 때문에, 이 프로젝트의 EKF publisher와 전혀 다른 팀이 만든 rviz2/rqt 같은 범용 도구가 별도 설정 없이 바로 호환된다는 점
